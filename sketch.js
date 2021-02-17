@@ -44,6 +44,8 @@ function setup() {
 
 function draw() {
   background(bgImg);
+star.x= starBody.position.x 
+star.y= starBody.position.y
 
 if(keyDown("left")){
 
@@ -53,7 +55,7 @@ fairy.x=fairy.x - 9;
 
 if(keyDown("down")){
 
-star.velocityY=9;
+Matter.Body.setStatic(starBody, false);
 
 
 }
